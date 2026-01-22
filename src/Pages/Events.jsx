@@ -17,7 +17,9 @@ function EventsPage(){
     onModalHide: () => hideModal()
   }
 
-  const upcomingEvents = [
+  const upcomingEvents = []
+
+  const pastEvents = [
     {
       name: "L.E.F.T.S.",
       date: "Jan 17 – Jan 18, 2026",
@@ -25,11 +27,8 @@ function EventsPage(){
         participation regardless of skill level.   Check the
         <a href="https://lefts.groovestats.com/">event website</a>
         for more details.`],
-      logo: 'lefts-logo.jpg'
+      thumbs: ["lefts-1.jpg", "lefts-2.jpg"]
     },
-  ]
-
-  const pastEvents = [
     {
       name: "Stamina Con 2",
       date: "Oct 31 – Nov 2, 2025",
@@ -152,10 +151,12 @@ function EventsPage(){
 
       <hr style={{"margin": "2em 0em"}} />
 
-      <section className="event-group">
-        <h2 id="Upcoming-Events">Upcoming Events</h2>
-        { upcomingEvents.map((upcomingEvent,i) => event(upcomingEvent, i)) }
-      </section>
+      {upcomingEvents.length > 0 &&
+        <section className="event-group">
+          <h2 id="Upcoming-Events">Upcoming Events</h2>
+          { upcomingEvents.map((upcomingEvent,i) => event(upcomingEvent, i)) }
+        </section>
+      }
 
       <section className="event-group">
         <h2 id="Past-Events">Past Events</h2>
