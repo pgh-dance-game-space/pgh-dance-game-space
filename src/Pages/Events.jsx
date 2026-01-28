@@ -25,9 +25,13 @@ function EventsPage(){
       date: "Jan 17 – Jan 18, 2026",
       desc: [`LEFTS is a casual, inclusive event that maximizes everyone's
         participation regardless of skill level.   Check the
-        <a href="https://lefts.groovestats.com/">event website</a>
+        <a target="_blank" href="https://lefts.groovestats.com/">event website</a>
         for more details.`],
-      thumbs: ["lefts-1.jpg", "lefts-2.jpg"]
+      thumbs: [
+        "lefts-1.jpg", "lefts-2.jpg", "lefts-3.jpg",
+        "lefts-4.jpg", "lefts-5.jpg", "lefts-6.jpg",
+        "lefts-7.jpg", "lefts-8.jpg", "lefts-9.jpg"
+      ]
     },
     {
       name: "Stamina Con 2",
