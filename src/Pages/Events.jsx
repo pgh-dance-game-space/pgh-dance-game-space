@@ -4,7 +4,7 @@ import Modal from "../_layout/Modal"
 function EventsPage(){
 
   const [modalVisible, setModalVisible] = useState(false)
-  const [imgIndex, setImgIndex]         = useState(0)
+  const [imgIndex,     setImgIndex]     = useState(0)
   const [imgGroupName, setImgGroupName] = useState("")
   const [filenames,    setFilenames]    = useState([])
 
@@ -16,6 +16,18 @@ function EventsPage(){
     isVisible: modalVisible,
     onModalHide: () => hideModal()
   }
+
+  // an event can have the following keys:
+  //    name: string, to be prominently displayed in large bold text
+  //    date: string, to be display just under the event name
+  //    desc: array of strings, each string will be a distinct paragraph
+  //          collectively they should descibe the event.  strings can contain html
+  //    logo: string, filename for a full-width image representing a future event
+  //          for example, when LEFTS hadn't occured yet, the LEFTS logo was pathed at
+  //          ./public/img/events/L.E.F.T.S./lefts-logo.jpg
+  //          and the `logo` key was `lefts-logo.jpg`
+  //  thumbs: array of strings, each string is a filename to a thumbnail in ./thumbs/
+  //          corresponding full-size images should have the same file name in ../full/
 
   const upcomingEvents = []
 
