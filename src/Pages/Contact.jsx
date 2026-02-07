@@ -25,8 +25,7 @@ function ContactPage(){
 
     <p>
       If you'd like to host an event at the PGH Dance Game Space,
-      send an email to <code>pgh.dance.game.space@gmail.com</code> or
-      DM <code>quietly_turning</code> on Discord.
+      send an email to <code>pgh.dance.game.space@gmail.com</code>.
     </p>
   </div>
   )

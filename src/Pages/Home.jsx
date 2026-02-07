@@ -50,26 +50,29 @@ function HomePage(){
 
       <h2 id="Staff">Staff</h2>
       <p>
-        <span className="fst-italic">The Space</span> was founded in fall of 2023,
-        and continues to be managed and actively moderated
-        by <code>quietly-turning</code>, who describes himself as a
+        As a Pennsylvania nonprofit, <span className="fst-italic">The
+        Space</span>'s board of trustees and general leadership is:
       </p>
+
       <ul>
-        <li>lifelong dance gamer</li>
-        <li>former StepMania dev</li>
-        <li>haiku enjoyer</li>
+        <li>CrashCringle</li>
+        <li>Joel</li>
+        <li>Mey-Z Daisy</li>
       </ul>
 
 
       <h2 id="Special-Thanks">Special Thanks</h2>
       <p>
+        <span className="fst-italic">The Space</span> was founded in fall of 2023
+        by quietly-turning.
+      </p>
+      <p>
         Many have helped with The Space, but these people have gone above
         and beyond in contributing their own time, money, and effort:
       </p>
       <ul>
-        <li>Mey-Z Daisy</li>
         <li>SpaghettiSnail</li>
-        <li>Joel</li>
+        <li>Vidur</li>
       </ul>
     </div>
   )
