@@ -5,6 +5,11 @@ function NewsPage(){
         News
       </h1>
 
+      <h2>February 2026 Update</h2>
+      <p>It's been nearly a year since the last update!  The PGH Dance Game Space has been busy but good. :)</p>
+      <object style={{"width":"100%", "height": "500px"}} data="https://www.youtube.com/embed/8pbFDzUK8Qo?si=Vtfm_IhR0iATu61J"></object>
+
+
       <h2>March 2024 Update</h2>
       <p>
         Half a year ago, I shared a video showcasing the PGH Dance Game Space where I talked about
