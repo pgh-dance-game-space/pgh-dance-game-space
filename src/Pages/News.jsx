@@ -10,6 +10,10 @@ function NewsPage(){
       <object style={{"width":"100%", "height": "500px"}} data="https://www.youtube.com/embed/8pbFDzUK8Qo?si=Vtfm_IhR0iATu61J"></object>
 
 
+      <h2>December 2025 Holiday Party</h2>
+      <p>Happy Holidays from the PGH Dance Game Space!</p>
+      <img className="img-fluid" src="/img/news/holidayparty2025.jpg" alt="group photo of about 20 people gather for the PGH Dance Game Space 2025 holiday party" />
+
       <h2>March 2024 Update</h2>
       <p>
         Half a year ago, I shared a video showcasing the PGH Dance Game Space where I talked about
