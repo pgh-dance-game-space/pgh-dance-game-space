@@ -19,6 +19,13 @@ import EventsPage  from "./Pages/Events.jsx"
 import NewsPage    from "./Pages/News.jsx"
 import ContactPage from "./Pages/Contact.jsx"
 
+const showToC = {
+  "":        false,
+  "events":  true,
+  "news":    true,
+  "contact": false
+}
+
 // -----------------------------------
 
 function App(){
@@ -57,7 +64,7 @@ function App(){
               </Routes>
             </div>
 
-            <TableOfContents />
+            <TableOfContents showToC={showToC} />
           </div>
         </div>
       </div>

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react"
 import { Route, Routes } from "react-router"
 
-function TableOfContents(){
+function TableOfContents({showToC}){
   const [ToC, setToC] = useState()
+  const normalizedPathname = location.pathname.replace(/^\//, '').toLowerCase()
 
   useEffect(() => {
     setToC(null)
@@ -24,18 +25,25 @@ function TableOfContents(){
   }
 
   function initToC(){
+    if (showToC[normalizedPathname] === false){ return null }
+
     // get all <h2> elements in this page and transform into a Table of Content
     // for right-side-of-page navigation
-    return Array.from(document.getElementsByClassName("event-group")).map(eventGroup=>{
-      const groupEl = Array.from(eventGroup.getElementsByTagName("h2"))[0];
+
+    // an <h2> on a page maps to an <ul> in a Table of Contents
+    // and each <h3> under that <h2> maps to an <li>
+    // on the /events page, "Upcoming Events" is an <h2> and "Past Events" is a separate <h2>
+    const h2s = Array.from(document.getElementsByTagName("h2"));
+
+    return h2s.map(el =>{
+      const container = el.parentElement;
       return {
-        text:     groupEl.innerText,
-        id:       groupEl.id,
-        children: Array.from(eventGroup.getElementsByClassName("event")).map(event=>{
-          const eventEl = Array.from(event.getElementsByTagName("h3"))[0];
+        text:     el.dataset.tocName ?? el.innerText,
+        id:       el.id,
+        children: Array.from(container.getElementsByTagName("h3")).map(item=>{
           return{
-            text: eventEl.innerText,
-            id:   eventEl.id,
+            text: item.dataset.tocName ?? item.innerText,
+            id:   item.id,
           }
         })
       }
