@@ -19,6 +19,9 @@ import EventsPage  from "./Pages/Events.jsx"
 import NewsPage    from "./Pages/News.jsx"
 import ContactPage from "./Pages/Contact.jsx"
 
+
+// -----------------------------------
+
 const showToC = {
   "":        false,
   "events":  true,
@@ -26,6 +29,10 @@ const showToC = {
   "contact": false
 }
 
+// -----------------------------------
+// TODO: it's possible Events and News will eevntually need to be paginated
+//       but we're not there yet, and no point engineering a solution
+//       for a problem that doesn't yet (may never) exist
 // -----------------------------------
 
 function App(){
