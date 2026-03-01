@@ -24,7 +24,7 @@ function EventsPage(){
   //          collectively they should descibe the event.  strings can contain html
   //    logo: string, filename for a full-width image representing a future event
   //          for example, when LEFTS hadn't occured yet, the LEFTS logo was pathed at
-  //          ./public/img/events/L.E.F.T.S./lefts-logo.jpg
+  //          ./public/img/events/L.E.F.T.S/lefts-logo.jpg
   //          and the `logo` key was `lefts-logo.jpg`
   //  thumbs: array of strings, each string is a filename to a thumbnail in ./thumbs/
   //          corresponding full-size images should have the same file name in ../full/
@@ -33,7 +33,7 @@ function EventsPage(){
 
   const pastEvents = [
     {
-      name: "L.E.F.T.S.",
+      name: "L.E.F.T.S",
       date: "Jan 17 – Jan 18, 2026",
       desc: [`LEFTS is a casual, inclusive event that maximizes everyone's
         participation regardless of skill level.   Check the
