@@ -29,7 +29,15 @@ function EventsPage(){
   //  thumbs: array of strings, each string is a filename to a thumbnail in ./thumbs/
   //          corresponding full-size images should have the same file name in ../full/
 
-  const upcomingEvents = []
+  const upcomingEvents = [
+    {
+      name: "Stamina Jawn 2",
+      date: "May 15 – May 17, 2026",
+      desc: [`Stamina Jawn 2 is another in-person event focused on teams meeting up to complete sets for 
+        <a target=\"_blank\" href=\"https://ecs145.groovestats.com/\">ECS 14.5</a>.
+        <center>\"<i>Come for a weekend of team stamina, stay for the good company and vibes\"</i></center>`]
+    }
+  ]
 
   const pastEvents = [
     {
