@@ -30,7 +30,7 @@ const showToC = {
 }
 
 // -----------------------------------
-// TODO: it's possible Events and News will eevntually need to be paginated
+// TODO: it's possible Events and News will eventually need to be paginated
 //       but we're not there yet, and no point engineering a solution
 //       for a problem that doesn't yet (may never) exist
 // -----------------------------------
