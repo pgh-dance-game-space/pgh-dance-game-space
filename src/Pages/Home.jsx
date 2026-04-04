@@ -16,16 +16,28 @@ function HomePage(){
       </p>
 
       <p>
-        <img className="img-fluid" src="/img/homepage1.jpg" alt="three people playing dance games at the PGH Dance Game Space" />
+        <img src="/img/homepage1.jpg"
+            className="img-fluid"
+            alt="three people playing dance games at the PGH Dance Game Space" 
+        />
       </p>
       <p>
-        <img className="img-fluid" src="/img/homepage2.jpg" alt="photo showcasing the variety of dance game arcade machines available at the PGH Dance Game Space" />
+        <img src="/img/homepage2.jpg"
+            className="img-fluid" 
+            alt="photo showcasing the variety of dance game arcade machines available at the PGH Dance Game Space" 
+        />
       </p>
       <p>
-        <img className="img-fluid" src="/img/homepage4.jpg" alt="young adults sitting at a long table, playing board games.  the pair in the background considers their game of Go as a third person watches." />
+        <img src="/img/homepage4.jpg" 
+             className="img-fluid" 
+             alt="young adults sitting at a long table, playing board games.  the pair in the background considers their game of Go as a third person watches."
+        />
       </p>
       <p>
-        <img className="img-fluid" src="/img/homepage3.jpg" alt="group of friends smiling and posing for a photo after collectively beating Starfox 64" />
+        <img src="/img/homepage3.jpg" 
+             className="img-fluid" 
+             alt="group of friends smiling and posing for a photo after collectively beating Starfox 64" 
+        />
       </p>
 
       <p id="mission-statement">
@@ -42,15 +54,20 @@ function HomePage(){
         Secondary goals include:
       </p>
       <ol>
-        <li>providing the local Pittsburgh community a place to play rhythm games</li>
-        <li>providing the broader global dance game community a permanent location equipped to host events</li>
+        <li>
+            providing the local Pittsburgh community a place to play rhythm games
+        </li>
+        <li>
+            providing the broader global dance game community a permanent
+            location equipped to host events
+        </li>
       </ol>
 
       <object style={{"width":"100%", "height": "500px"}} data="https://www.youtube.com/embed/7c6lHh8JEsk"></object>
 
       <h2 id="Staff">Staff</h2>
       <p>
-        As a Pennsylvania nonprofit, <span className="fst-italic">The
+        As a 501(c)(3) nonprofit, <span className="fst-italic">The
         Space</span>'s board of trustees and general leadership is:
       </p>
 
@@ -63,12 +80,13 @@ function HomePage(){
 
       <h2 id="Special-Thanks">Special Thanks</h2>
       <p>
-        <span className="fst-italic">The Space</span> was founded in fall of 2023
+        <span className="fst-italic">The Space</span> was founded in 2023
         by quietly-turning.
       </p>
       <p>
-        Many have helped with The Space, but these people have gone above
-        and beyond in contributing their own time, money, and effort:
+        Many have helped with <span className="fst-italic">The Space</span>, but
+        these people have gone above and beyond in contributing their own time,
+        money, and effort:
       </p>
       <ul>
         <li>SpaghettiSnail</li>
