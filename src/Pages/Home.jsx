@@ -73,7 +73,7 @@ function HomePage(){
 
       <ul>
         <li>CrashCringle</li>
-        <li>Joel</li>
+        <li>gonzo_aka_joel</li>
         <li>Mey-Z Daisy</li>
       </ul>
 
