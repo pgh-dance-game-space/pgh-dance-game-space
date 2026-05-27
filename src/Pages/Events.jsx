@@ -42,7 +42,11 @@ function EventsPage(){
         `<blockquote>"Come for a weekend of
          team stamina, stay for the good company and vibes."</blockquote>`
       ],
-      logo: "sj2-logo.png"
+      thumbs: [
+      	"sj2-1.jpg", "sj2-2.jpg", "sj2-3.jpg", "sj2-4.jpg", "sj2-5.jpg",
+        "sj2-6.jpg", "sj2-7.jpg", "sj2-8.jpg", "sj2-9.jpg"
+      ]
+
     },
     {
       name: "L.E.F.T.S",
