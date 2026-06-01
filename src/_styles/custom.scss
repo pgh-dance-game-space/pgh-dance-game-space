@@ -369,6 +369,8 @@ img.thumbnail{
 	}
 }
 
+
+/* simple image carousel */
 #modal {
   display: none;
   position: fixed;
@@ -380,6 +382,7 @@ img.thumbnail{
   background-color: rgba(0, 0, 0, 0.8);
 
 	#modal-content {
+		height: 100%;
 		width: 90%;
 		display: grid;
 		justify-items: center;
@@ -398,8 +401,14 @@ img.thumbnail{
 			}
 
 			button{
-				width: 32px;
+				height: 32px;
+				width:  32px;
 				border-radius: 4px;
+				background: transparent;
+				color: white;
+				font-size: 32px;
+				border: 0px;
+				padding: 0px;
 			}
 
 			button.close{
