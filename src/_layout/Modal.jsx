@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 function Modal({isVisible, activeImgGroup, imgIndex, thumbs, onModalHide, setImgIndex}){
 
   let imgSrc = `/img/events/${activeImgGroup}/full/${thumbs[imgIndex]}`
-  const [kdbInit, setKbdInit] = useState(false)
+  const [modalInit, setModalInit] = useState(false)
 
   const incrementIndex = () => {
     setImgIndex(prevIndex => prevIndex+1)
@@ -23,10 +23,22 @@ function Modal({isVisible, activeImgGroup, imgIndex, thumbs, onModalHide, setImg
     kbd[e.key] ? kbd[e.key]() : {}
   }
 
+  let touchstartX = 0
+  let touchendX = 0
+
+  const checkSwipeDirection = () => {
+    if (touchendX < touchstartX) { incrementIndex() }  // swipe left
+    if (touchendX > touchstartX) { decrementIndex() }  // swipe right
+  }
+
   useEffect(() => {
-    if (isVisible && !kdbInit){
+    if (isVisible && !modalInit){
       window.addEventListener("keydown", keyboardEventListener)
-      setKbdInit(true)
+
+      window.addEventListener("touchstart", e => { touchstartX = e.changedTouches[0].screenX })
+      window.addEventListener("touchend",   e => { touchendX   = e.changedTouches[0].screenX; checkSwipeDirection() })
+
+      setModalInit(true)
     }
   }, [isVisible]);
 
