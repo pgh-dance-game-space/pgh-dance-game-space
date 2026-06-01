@@ -61,7 +61,7 @@ function Modal({isVisible, activeImgGroup, imgIndex, thumbs, onModalHide, setImg
         <div id="modal-content">
           <div id="modal-nav">
             <div id="currentIndex">
-              {imgIndex}/{thumbs.length}
+              {imgIndex+1}/{thumbs.length}
             </div>
 
             <div id="prev-next">
