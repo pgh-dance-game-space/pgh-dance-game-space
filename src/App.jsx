@@ -15,7 +15,7 @@ import TableOfContents from "./_layout/TableOfContents"
 
 // ------- components for pages
 import HomePage    from "./Pages/Home.jsx"
-import EventsPage  from "./Pages/Events.jsx"
+import EventsPage  from "./Pages/Events/Events.jsx"
 import NewsPage    from "./Pages/News.jsx"
 import ContactPage from "./Pages/Contact.jsx"
 
