@@ -163,7 +163,7 @@ a{
 	}
 
 	#modal-nav{
-		width: 66%;
+		width: 85%;
 	}
 }
 
@@ -392,8 +392,20 @@ img.thumbnail{
 		#modal-nav{
 			display: grid;
 			grid-template-columns: repeat(3, minmax(0, 1fr));
+			color: white;
+			font-size: 20px;
+			height: 32px;
+			margin-top: 8px;
+
+			#currentIndex{
+			  height: 32px;
+				display: grid;
+				align-items: center;
+				letter-spacing: 2px;
+			}
 
 			#prev-next{
+				display: flex;
 				justify-self: center;
 				button{
 					margin: 0px 8px;
@@ -403,12 +415,13 @@ img.thumbnail{
 			button{
 				height: 32px;
 				width:  32px;
-				border-radius: 4px;
 				background: transparent;
 				color: white;
 				font-size: 32px;
 				border: 0px;
 				padding: 0px;
+				display: grid;
+				align-content: center;
 			}
 
 			button.close{

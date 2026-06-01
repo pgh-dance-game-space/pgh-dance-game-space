@@ -60,7 +60,10 @@ function Modal({isVisible, activeImgGroup, imgIndex, thumbs, onModalHide, setImg
       <div id="modal" style={{"display": 'block'}}>
         <div id="modal-content">
           <div id="modal-nav">
-            <span></span>
+            <div id="currentIndex">
+              {imgIndex}/{thumbs.length}
+            </div>
+
             <div id="prev-next">
               <button id="prev-image-link" onClick={decrementIndex} aria-label="previous image"> ← </button>
               <button id="next-image-link" onClick={incrementIndex} aria-label="next image"> → </button>
