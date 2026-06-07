@@ -13,8 +13,9 @@
     "react-router": "^7.5.2"
   },
   "scripts": {
-    "start": "sass --watch src/_styles/ & vite",
+    "start": "sass src/_styles && vite build && vite preview",
     "build": "sass src/_styles && vite build",
+    "dev": "sass src/_styles & vite",
     "deploy": "gh-pages -d dist --cname pghdancegamespace.org",
     "predeploy": "npm run build"
   },
