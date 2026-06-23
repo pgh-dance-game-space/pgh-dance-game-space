@@ -13,7 +13,8 @@
     "react-router": "^7.5.2"
   },
   "scripts": {
-    "start": "sass src/_styles && vite build && vite preview",
+    "dev": "concurrently -k -n sass,vite \"sass --watch src/_styles/\" \"vite\"",
+    "start": "npm run dev",
     "build": "sass src/_styles && vite build",
     "dev": "sass src/_styles & vite",
     "deploy": "gh-pages -d dist --cname pghdancegamespace.org",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@vitejs/plugin-react": "^4.7.0",
+    "concurrently": "^10.0.3",
     "sass": "^1.87.0",
     "vite": "^7.0.6"
   }
